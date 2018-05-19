@@ -9,6 +9,18 @@ h4,
 h5,
 h6,
 p,
+a,
 span {
   font-family: 'mr-eaves-sans';
+  font-weight: 300;
+  color: white;
+}
+
+p,
+span {
+  font-size: 18px;
+}
+
+ul {
+  list-style-type: none;
 }

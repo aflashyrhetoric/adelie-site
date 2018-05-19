@@ -25,16 +25,9 @@ class VSlider extends Component {
   }
 
   startLoop() {
-
-    // console.log(this.textArray);
-    // console.log(this.state.textIndex);
-    // console.log(this.textArray.length);
-
     if(this.state.textIndex == this.textArray.length - 1) {
       this.setState({ textIndex: 0 });
     } else {
-      // console.log('bye')
-      console.log(this.state.textIndex);
       this.setState({ textIndex: this.state.textIndex + 1 })
     }
   }
