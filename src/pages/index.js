@@ -1,7 +1,19 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import AdelieLogo from '../icon/adelie.png'
+import VSlider from '../components/vertical-slider'
 
-import AdelieLogo from '../icon/adelie.png';
+const IndexPage = () => (
+  <div style={styles.container}>
+    <div>
+      <img style={styles.logo} srcSet={`${AdelieLogo} 2x`} />
+    </div>
+    <div style={styles.logoContainer}>
+      <h1 style={styles.logoText} className="logo">adelie</h1>
+      <VSlider style={styles.text}></VSlider>
+    </div>
+  </div>
+)
 
 const styles = {
   container: {
@@ -16,6 +28,11 @@ const styles = {
     marginBottom: 0,
   },
   logoContainer: {
+    display: 'flex',
+    flexFlow: 'column',
+    justifyContent: 'flex-start',
+    alignItems: 'flex-start',
+    height: '82px',
   },
   logoText: {
     fontWeight: 300,
@@ -23,21 +40,7 @@ const styles = {
   },
   text: {
     marginBottom: 0,
-    marginBottom: 0,
   }
 }
-
-const IndexPage = () => (
-  <div style={styles.container}>
-    <div>
-      <img style={styles.logo} srcSet={`${AdelieLogo} 2x`} />
-    </div>
-    <div style={styles.logoContainer}>
-      <h1 className="logo" style={styles.logoText}>adelie</h1>
-      <p>DEVELOPERS GROUP</p>
-    {/*<Link to="/page-2/">Go to page 2</Link>*/}
-    </div>
-  </div>
-)
 
 export default IndexPage
