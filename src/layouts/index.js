@@ -23,9 +23,7 @@ const Layout = ({ children, data }) => (
 
     />
 
-    <div>
-      {children()}
-    </div>
+    {children()}
   </div>
 )
 
