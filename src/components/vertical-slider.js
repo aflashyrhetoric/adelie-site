@@ -21,24 +21,36 @@ class VSlider extends Component {
   }
 
   componentDidMount() {
-    setInterval(this.startLoop(), 1500)
+    setInterval(this.startLoop, 1500)
   }
 
   startLoop() {
 
-    console.log(this.state.textIndex);
+    // console.log(this.textArray);
+    // console.log(this.state.textIndex);
+    // console.log(this.textArray.length);
 
-    if(this.state.textIndex === this.textArray.length - 1) {
+    if(this.state.textIndex == this.textArray.length - 1) {
       this.setState({ textIndex: 0 });
     } else {
-      this.setState({ textIndex: this.state.textIndex++ })
+      // console.log('bye')
+      console.log(this.state.textIndex);
+      this.setState({ textIndex: this.state.textIndex + 1 })
     }
   }
 
   render() {
     return (
-      <p>{ this.textArray[this.state.textIndex] }</p>
+      <p style={styles.text}>{ this.textArray[this.state.textIndex] }</p>
     );
+  }
+}
+
+const styles = {
+  text: {
+    fontWeight: 100,
+    textTransform: 'uppercase',
+    minWidth: '150px',
   }
 }
 

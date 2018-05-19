@@ -36,6 +36,7 @@ const styles = {
   },
   logoText: {
     fontWeight: 300,
+    fontSize: '30px',
     marginBottom: 0,
   },
   text: {
