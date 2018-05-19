@@ -27,6 +27,8 @@ const IndexPage = ({ data }) => (
     <div>
 
       <p>This site is under construction. For now, check out our <a href="https://adelie.id">community site.</a></p>
+
+      {/*TODO: Add a projects section and about page, link everything together, configure a new Layout component to work for project pages, see if Glamor css-in-js can use <style> tags the same way Vue can*/}
 {/*      <ul css={{ display: 'inline', }}>
         <li>
           <Link to={node.path}>{node.path}</Link>
